@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image_url": "https://i.ibb.co/sC33Qvr/algorithom.png",
+    "title": "Algorithm",
+    "description": "Learn the basics of algorithms and data structures with this comprehensive course.",
+    "credit": 10,
+    "price": 15000
+  },
+  {
+    "id": 2,
+    "image_url": "https://i.ibb.co/8sRz82m/c-programming.png",
+    "title": "C Programming",
+    "description": "Master the fundamentals of C programming with this beginner-friendly course.",
+    "credit": 5,
+    "price": 10000
+  },
+  {
+    "id": 3,
+    "image_url": "https://i.ibb.co/1Lb7vkD/DS.png",
+    "title": "Introduction to Algorithms",
+    "description": "Learn the essential algorithms and data structures that every computer scientist should know.",
+    "credit": 10,
+    "price": 25000
+  },
+  {
+    "id": 4,
+    "image_url": "https://i.ibb.co/RcMXXNd/cpp.png",
+    "title": "Introduction to C++ for DSA",
+    "description": "Learn the basics of C++ and how to use it to implement data structures and algorithms.",
+    "credit": 10,
+    "price": 10000
+  },
+  {
+    "id": 5,
+    "image_url": "https://i.ibb.co/VTrmqFz/python-OOP.png",
+    "title": "Introduction to Python Programming",
+    "description": "Learn the basics of object-oriented programming in Python with this beginner-friendly course.",
+    "credit": 5,
+    "price": 10000
+  },
+  {
+    "id": 6,
+    "image_url": "https://i.ibb.co/6fX29t7/SE.png",
+    "title": "Software Engineering",
+    "description": "Learn the fundamentals of software engineering, from requirements gathering to testing and deployment.",
+    "credit": 15,
+    "price": 50000
+  },
+  {
+    "id": 7,
+    "image_url": "https://i.ibb.co/VTrmqFz/python-OOP.png",
+    "title": "Introduction to OOP Python",
+    "description": "Learn about object-oriented programming in Python with this comprehensive course.",
+    "credit": 10,
+    "price": 23000
+  },
+  {
+    "id": 8,
+    "image_url": "https://i.ibb.co/0s5y5xT/MySQL.png",
+    "title": "Database (MySQL)",
+    "description": "Learn the basics of MySQL, a popular relational database management system.",
+    "credit": 5,
+    "price": 10000
+  },
+  {
+    "id": 9,
+    "image_url": "https://i.ibb.co/55NqLmf/Problem-solving.png",
+    "title": "Problem-Solving Part",
+    "description": "Learn the essential skills of problem solving, from identifying the problem to developing and implementing a solution.",
+    "credit": 10,
+    "price": 25000
+  }
+]
