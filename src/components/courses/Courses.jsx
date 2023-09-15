@@ -11,8 +11,8 @@ export default function Courses({selectHandler}) {
   }, [])
   
   return (
-    <section className='lg:w-3/4'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-5'>
+    <section className='lg:w-3/4 mb-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center gap-5'>
         {
           courses.map(course => {
             return <Card

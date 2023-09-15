@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 export default function Cart({ selected, totalRemaining, totalCredit, totalPrice }) {
   
   return (
-    <section className="lg:w-1/4">
+    <section className="sm:w-1/2 mx-auto lg:w-1/4">
       <div className="rounded-lg bg-white p-5">
         <p className="text-sky-500 text-lg font-semibold">Credit Hour Remaining {totalRemaining} hr</p>
         <div className="divider"></div>
