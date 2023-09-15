@@ -3,16 +3,16 @@ import { BsBook } from 'react-icons/bs';
 
 export default function Card({ course }) {
     const { image_url, title, credit, description,  price} = course;
-    console.log(course)
+    
   return (
-    <div className="card bg-base-100 shadow-xl">
-        <figure className="px-4 pt-10">
+    <div className="card max-w-xs bg-base-100 shadow-xl">
+        <figure className="px-4 pt-4">
             <img src={image_url} alt="Shoes" className="rounded-xl" />
         </figure>
-        <div className="card-body px-4 items-center text-center">
-              <h2 className="card-title">{title }</h2>
-              <p>{description}</p>
-              <div className='flex gap-3'>
+        <div className="card-body p-4">
+              <h2 className="card-title py-2">{title }</h2>
+              <p className='text-gray'>{description}</p>
+              <div className='flex gap-3 py-2 text-gray'>
                   <div>
                       $ Price: { price }
                   </div>
@@ -21,7 +21,7 @@ export default function Card({ course }) {
                   </div>
               </div>
             <div className="card-actions">
-                <button className="btn btn-primary capitalize btn-sm">Select</button>
+                <button className="btn bg-sky-500 hover:bg-sky-600 text-white capitalize btn-sm flex-1">Select</button>
             </div>
         </div>
     </div>

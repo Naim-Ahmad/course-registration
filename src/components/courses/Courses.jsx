@@ -10,8 +10,8 @@ export default function Courses() {
   }, [])
   
   return (
-    <section>
-      <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-5 lg:w-3/4'>
+    <section className='lg:w-3/4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center gap-5'>
         {
           courses.map(course => {
             return <Card

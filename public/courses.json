@@ -34,14 +34,14 @@
   {
     "id": 5,
     "image_url": "https://i.ibb.co/VTrmqFz/python-OOP.png",
-    "title": "Introduction to Python Programming",
+    "title": "Introduction to OOP Python",
     "description": "Learn the basics of object-oriented programming in Python with this beginner-friendly course.",
     "credit": 5,
     "price": 10000
   },
   {
     "id": 6,
-    "image_url": "https://ibb.co/R0NQGrR",
+    "image_url": "https://i.ibb.co/Fwjshgq/software-enginearing.png",
     "title": "Software Engineering",
     "description": "Learn the fundamentals of software engineering, from requirements gathering to testing and deployment.",
     "credit": 15,
@@ -49,15 +49,15 @@
   },
   {
     "id": 7,
-    "image_url": "https://i.ibb.co/VTrmqFz/python-OOP.png",
-    "title": "Introduction to OOP Python",
-    "description": "Learn about object-oriented programming in Python with this comprehensive course.",
+    "image_url": "https://i.ibb.co/4dtcPS4/AWS.png",
+    "title": "AWS, Cloud Computing",
+    "description": "Amazon Web Services: Leading cloud provider offering scalable computing solutions.",
     "credit": 10,
     "price": 23000
   },
   {
     "id": 8,
-    "image_url": "https://i.ibb.co/0s5y5xT/MySQL.png",
+    "image_url": "https://i.ibb.co/3cL5Cn8/DB.png",
     "title": "Database (MySQL)",
     "description": "Learn the basics of MySQL, a popular relational database management system.",
     "credit": 5,
