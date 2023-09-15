@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
 import Card from './Card'
 
-export default function Courses() {
+export default function Courses({selectHandler}) {
   const [courses, setCourses] = useState([])
   useEffect(() => {
     fetch('courses.json')
@@ -17,10 +18,15 @@ export default function Courses() {
             return <Card
               key={course.id}
               course={course}
+              selectHandler={selectHandler}
             />
           })
         }
       </div>
     </section>
   )
+}
+
+Courses.propTypes = {
+  selectHandler: PropTypes.func.isRequired
 }

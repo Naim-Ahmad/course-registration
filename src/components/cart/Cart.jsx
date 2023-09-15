@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types'
 
-export default function Cart() {
+export default function Cart({selected}) {
   return (
     <section className="lg:w-1/4">
       <div className="rounded-lg bg-white p-5">
@@ -7,7 +8,7 @@ export default function Cart() {
         <div className="divider"></div>
         <h2 className="text-xl font-bold text-[#1C1B1B] mb-3">Course Name</h2>
         <ol className="list-decimal ps-5 text-gray">
-          <li>some</li>
+          {selected.map(item => <li key={item.id}>{ item.title }</li>)}
         </ol>
         <div className="divider"></div>
         <p>Total Credit Hour : 13</p>
@@ -16,4 +17,8 @@ export default function Cart() {
       </div>
     </section>
   )
+}
+
+Cart.propTypes = {
+  selected: PropTypes.array.isRequired
 }
