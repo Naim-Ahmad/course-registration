@@ -6,11 +6,27 @@ import Courses from './components/courses/Courses'
 
 function App() {
   const [selected, setSelected] = useState([])
+  const [totalCredit, setTotalCredit] = useState(0)
+  const [totalRemaining, setTotalRemaining] = useState(20)
 
   const selectHandler = (course) => {
     const isExist = selected.find(item => item.id === course.id)
     if (!isExist) {
-      setSelected([...selected, course])
+      const newSelected = [...selected, course]
+      const sumCredit = newSelected.reduce((a, b) => a + b.credit, 0)
+      const remainingCredit = 20 - sumCredit;
+      console.log(sumCredit, remainingCredit, selected)
+    if (remainingCredit < 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'You have exceeded the total credit hour!'
+      })
+    } else {
+      setSelected(newSelected)
+      setTotalCredit(sumCredit)
+      setTotalRemaining(remainingCredit)
+    }
+    
     } else {
       Swal.fire({
         icon: 'warning',
@@ -25,7 +41,11 @@ function App() {
       </header>
       <main className='max-w-[1350px] mx-auto px-8 lg:flex gap-8'>
         <Courses selectHandler={ selectHandler} />
-        <Cart selected={ selected } />
+        <Cart
+          selected={selected}
+          totalCredit={totalCredit}
+          totalRemaining={totalRemaining}
+        />
       </main>
     </>
   )

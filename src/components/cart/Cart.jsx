@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types'
 
-export default function Cart({selected}) {
+export default function Cart({ selected, totalRemaining, totalCredit }) {
+  
   return (
     <section className="lg:w-1/4">
       <div className="rounded-lg bg-white p-5">
-        <p className="text-sky-500 text-xl font-semibold">Credit Hour Remaining 7 hr</p>
+        <p className="text-sky-500 text-lg font-semibold">Credit Hour Remaining {totalRemaining} hr</p>
         <div className="divider"></div>
         <h2 className="text-xl font-bold text-[#1C1B1B] mb-3">Course Name</h2>
         <ol className="list-decimal ps-5 text-gray">
           {selected.map(item => <li key={item.id}>{ item.title }</li>)}
         </ol>
         <div className="divider"></div>
-        <p>Total Credit Hour : 13</p>
+        <p>Total Credit Hour : { totalCredit }</p>
         <div className="divider"></div>
         <p>Total Price : 48000 USD</p>
       </div>
@@ -20,5 +21,7 @@ export default function Cart({selected}) {
 }
 
 Cart.propTypes = {
-  selected: PropTypes.array.isRequired
+  selected: PropTypes.array.isRequired,
+  totalRemaining: PropTypes.number.isRequired,
+  totalCredit: PropTypes.number.isRequired,
 }
