@@ -1,6 +1,6 @@
 # Course Registration
 
-This is a course-selling platform and there are some interesting features that I have implemented in this site using React js.
+This is a course-selling platform built using React.js. Below are some of its key features:
 
 ## Features
 
@@ -10,9 +10,14 @@ This is a course-selling platform and there are some interesting features that I
   - Total credit hours
   - Remaining credit hours
   - Total price
-- you can see the total credit hours, remaining credit hours, and total price.
-- if the credit hour is less than 0 or greater than 20, an alert will be displayed.
+- Alerts users if the entered credit hours are less than 0 or greater than 20.
 
-## State Management:
+## How I manage the state in this project.
 
-I have managed the state in the App component. The event is happening in the Card child component, and the data change is happening in the Chart component. These two components are connected in the App component, so I have kept the state in the App component and passed the data to the child components through props. I have declared three states: remainingCredit to show the remaining credit, totalCredit to show the total amount of credit, and totalPrice to show the total price.
+In this project, state management is handled in the `App` component. Events occur within the `Card` child component, and data updates are reflected in the `cart` component. These two components are connected within the `App` component, where the state is declared and data is passed to child components via props.
+
+Three states are maintained:
+
+- `remainingCredit`: Displays remaining credit.
+- `totalCredit`: Displays the total amount of credit.
+- `totalPrice`: Displays the total price.
