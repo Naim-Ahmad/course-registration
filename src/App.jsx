@@ -8,6 +8,7 @@ function App() {
   const [selected, setSelected] = useState([])
   const [totalCredit, setTotalCredit] = useState(0)
   const [totalRemaining, setTotalRemaining] = useState(20)
+  const [totalPrice, setTotalPrice] = useState(0)
 
   const selectHandler = (course) => {
     const isExist = selected.find(item => item.id === course.id)
@@ -15,6 +16,7 @@ function App() {
       const newSelected = [...selected, course]
       const sumCredit = newSelected.reduce((a, b) => a + b.credit, 0)
       const remainingCredit = 20 - sumCredit;
+      const sumPrice = newSelected.reduce((a, b )=> a + b.price, 0);
       console.log(sumCredit, remainingCredit, selected)
     if (remainingCredit < 0) {
       Swal.fire({
@@ -25,6 +27,7 @@ function App() {
       setSelected(newSelected)
       setTotalCredit(sumCredit)
       setTotalRemaining(remainingCredit)
+      setTotalPrice(sumPrice)
     }
     
     } else {
@@ -45,6 +48,7 @@ function App() {
           selected={selected}
           totalCredit={totalCredit}
           totalRemaining={totalRemaining}
+          totalPrice={totalPrice}
         />
       </main>
     </>

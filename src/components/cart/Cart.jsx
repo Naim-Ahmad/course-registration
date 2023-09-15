@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-export default function Cart({ selected, totalRemaining, totalCredit }) {
+export default function Cart({ selected, totalRemaining, totalCredit, totalPrice }) {
   
   return (
     <section className="lg:w-1/4">
@@ -14,7 +14,7 @@ export default function Cart({ selected, totalRemaining, totalCredit }) {
         <div className="divider"></div>
         <p>Total Credit Hour : { totalCredit }</p>
         <div className="divider"></div>
-        <p>Total Price : 48000 USD</p>
+        <p>Total Price : {totalPrice} USD</p>
       </div>
     </section>
   )
@@ -24,4 +24,5 @@ Cart.propTypes = {
   selected: PropTypes.array.isRequired,
   totalRemaining: PropTypes.number.isRequired,
   totalCredit: PropTypes.number.isRequired,
+  totalPrice: PropTypes.number.isRequired
 }
