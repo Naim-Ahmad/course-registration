@@ -18,8 +18,8 @@
   {
     "id": 3,
     "image_url": "https://i.ibb.co/1Lb7vkD/DS.png",
-    "title": "Introduction to Algorithms",
-    "description": "Learn the essential algorithms and data structures that every computer scientist should know.",
+    "title": "Basic Data Structures",
+    "description": "Learn the essential data structures that every computer scientist should know.",
     "credit": 10,
     "price": 25000
   },
